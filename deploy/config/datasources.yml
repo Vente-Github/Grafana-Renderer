@@ -1,0 +1,15 @@
+apiVersion: 1
+
+deleteDatasources:
+  - name: Prometheus
+    orgId: ${GF_USERS_AUTO_ASSIGN_ORG_ID}
+
+datasources:
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    orgId: ${GF_USERS_AUTO_ASSIGN_ORG_ID}
+    url: ${PROMETHEUS_URL}
+    isDefault: true
+    version: 1
+    editable: true
