@@ -5,6 +5,8 @@ services:
     image: ${IMAGE_NAME:-grafana/grafana-image-renderer}:${IMAGE_TAG:-latest}
     environment:
       ENABLE_METRICS:
+      BROWSER_TZ:
+      HTTP_PORT:
     networks:
       monitoring-net:
       traefik-net:
